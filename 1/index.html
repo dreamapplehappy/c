@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第一期-实验班周刊</title>
+	<link rel="stylesheet" href="prism.css">
+	<style type="text/css">
+		body{
+			overflow:hidden;
+			background-image: url("bg-1.jpg");
+		}
+		#container{
+			margin-left: 175px;
+		}
+		.cover-head{
+			background-image: url("cover-5.jpg") !important;
+		}
+		.snowbox{
+			font-size: 20px;
+		}
+		div.name{
+			height: 160px !important;
+			width: 100px;
+			line-height: 80px !important;
+			text-align: left !important;
+			font-size: 60px !important;
+			margin-top: 15px !important;
+			margin-left: 30px;
+		}
+		p.issue{
+			margin-top: 300px;
+			text-align: left;
+			text-indent: 30px;
+			font-size: 20px;
+		}
+		.cover-back{
+			background-image: url("cover-back-8-nw.jpg") !important;
+		}
+		a.linkTo{z-index: 1000;}
+		#flipbook{
+			width:400px;
+			height:300px;
+			margin-top: 60px;
+		}
+
+		#flipbook{
+			-webkit-transition:margin-left 0.2s ease-in-out;
+			-moz-transition:margin-left 0.2s ease-in-out;
+			-o-transition:margin-left 0.2s ease-in-out;
+			-ms-transition:margin-left 0.2s ease-in-out;
+			transition:margin-left 0.2s ease-in-out;
+		}
+
+		#flipbook .page{
+			width: 600px;
+			height:600 px;
+			line-height:20px;
+			font-size:20px;
+			text-align:center;
+			background-color:;
+		}
+		p.article-info span{
+			font-size: 15px;
+			line-height: 15px;
+		}
+		p.article-body-important{
+			padding: 0 20px 0 20px;
+			font-size: 17px;
+			text-indent: 20px;
+			line-height: 17px;
+			text-align: left;
+		}
+		p.article-body-detail{
+			padding: 0 20px 0 20px;
+			background-color:;
+			font-size: 16px !important;
+			line-height: 16px !important;
+			text-align: left;
+			text-indent: 20px;
+		}
+		div.img{
+			padding: 0 20px 0 20px;
+		}
+		img.faker-img{
+			width: 460px;
+		}
+		img.xiejunjie{
+			width: 60px;
+			height: 60px;
+			border-radius: 60px;
+		}
+		img.think{
+			width: 100px;
+			height: 100px;
+			border-radius: 100px;
+		}
+
+		a.linkTo{cursor: pointer;}
+		.footer{bottom: 5px !important; position: absolute !important;
+			width: 100%; height: 15px; font-size: 15px; line-height: 15px;
+			}
+
+		#flipbook .page-wrapper{
+			-webkit-perspective:2000px;
+			-moz-perspective:2000px;
+			-ms-perspective:2000px;
+			-o-perspective:2000px;
+			perspective:2000px;
+		}
+
+		#flipbook .hard{
+			color:#000;
+			-webkit-box-shadow:inset 0 0 5px #666;
+			-moz-box-shadow:inset 0 0 5px #666;
+			-o-box-shadow:inset 0 0 5px #666;
+			-ms-box-shadow:inset 0 0 5px #666;
+			box-shadow:inset 0 0 5px #666;
+			font-weight:bold;
+		}
+
+		#flipbook .odd{
+			background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+			background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+			background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+			background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+			background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+			background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+			-webkit-box-shadow:inset 0 0 5px #666;
+			-moz-box-shadow:inset 0 0 5px #666;
+			-o-box-shadow:inset 0 0 5px #666;
+			-ms-box-shadow:inset 0 0 5px #666;
+			box-shadow:inset 0 0 5px #666;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			background-color:;
+
+		}
+
+		#flipbook .even{
+			background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+			background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+			background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+			background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+			background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+			background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+			-webkit-box-shadow:inset 0 0 5px #666;
+			-moz-box-shadow:inset 0 0 5px #666;
+			-o-box-shadow:inset 0 0 5px #666;
+			-ms-box-shadow:inset 0 0 5px #666;
+			box-shadow:inset 0 0 5px #666;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+			background-color:;
+		}
+
+		#flipbook .shadow{
+			background-color:;
+		}
+		div.cover-head-back{
+			background-image: url("faker-pages-bg.jpg") !important;
+		}
+		div.pre{
+			display: block;
+			width: 420px;
+			margin: 0 40px 0 40px;
+		}
+		pre{
+
+		}
+		code{
+			font-size: 10px;
+		}
+		xmp{
+			font-size: 15px;
+			text-align: left;
+		}
+		img.nor{
+			height: 200px;
+			width: 400px;
+		}
+		p.laugh{
+			font-size: 15px;
+			text-align: left;
+			text-indent: 20px;
+			margin: 0 20px 0 20px;
+			background: linear-gradient(90deg, #000, #999);
+			color: white;
+		}
+		div.divlaugh{
+
+		}
+		div.technology{
+			background-image: url("bg-a-f.jpg") !important;
+		}
+		div.recommend{
+			background-image: url("bg-d-f.jpg") !important;
+		}
+		div.recommend h1{
+			color: white;
+		}
+		div.technology{
+			color: white;
+		}
+		a{
+			text-decoration: none;
+			text-align: left;
+		}
+		a:hover{
+			color: blue;
+		}
+	</style>
+
+	<script type="text/javascript" src="jquery-1.7.2.js"></script>
+	<script type="text/javascript" src="turn.js"></script>
+	<script type="text/javascript" src="try.js"></script>
+	<script type="text/javascript" src="prism.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#flipbook").turn({
+				width: 1000,
+				height: 600,
+				autoCenter: true
+			});
+			function changeTo(whichPage){
+				$("#flipbook").turn("page", whichPage);
+			}
+			$("a.linkTo").click(function(){
+				changeTo(parseInt($(this).attr("page")));
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div id="flipbook">
+			<div class="hard cover-head">
+				<div class="name">创刊</div>
+				<p class="issue">第一期</p>
+			</div>
+			<div class="hard cover-head-back">
+				<p>第一期</p>
+				<div class="img">
+					<img class="faker-img think" src="think.jpg">
+				</div>
+				<p>资料整理：李金祥</p>
+				<p>活动整理：边涛</p>
+				<p>责任编辑：罗鹏展</p>
+				<p>栏目编辑：罗鹏展</p>
+				<p>美术编辑：罗鹏展</p>
+				<p>发行日期：2014-11-21</p>
+				<p>JUST DO IT !</p>
+			</div>
+			<div class="technology">
+				<h1>爱技术</h1>
+				<h3>技术交流</h3>
+			</div>
+			<div>
+				<h3>#1-使用js+flash实现copy效果</h3>
+				<div class="img">
+					<img class="faker-img xiejunjie" src="xiejunjie.jpg">
+				</div>
+				<p class="article-info"><span>作者</span><span>-</span><span>王雪莹</span></p>
+				<p class="article-body-detail">我们在很多网站上都能看到复制代码段的效果，例如个人博客，bootstrap等网站，现在小编就分析一下他的实现原理，方便大家更简单的使用。</p>
+				<p class="article-body-important">·效果演示地址：</p>
+				<p class="article-body-detail">
+					<a href="http://demo.jb51.net/js/ZeroClipboard/index.html">http://demo.jb51.net/js/ZeroClipboard/index.html</a>
+				</p>
+				<p class="article-body-important">·实现原理分析： </p>
+				<p class="article-body-detail">
+					首先介绍一个跨浏览器的库类 Zero Clipboard 。它利用 Flash 进行复制，所以只要浏览器装有 Flash 就可以运行，而且比 IE 的 document.execCommand("Copy") 更加灵活。他会自动创建一个的flash，让其漂浮在按钮之上，这样其实点击的不是按钮而是 Flash ，也就可以使用 Flash 的复制功能了
+				</p>
+				<p class="article-body-important">·注意事项：</p>
+				<p class="article-body-detail">
+					一定要在PHP环境下运行，即使你打开的是html文件。
+				</p>
+				<p class="article-body-important">·需要引入两个js jquery库和zclip库</p>
+				<div class="footer">第<span>1</span>页</div>
+			</div>
+			<div>
+				<p class="article-body-important">·代码展示(CSS部分)</p>
+				<div class="pre">
+					<pre>
+						<code class="language-css">
+	.line{margin-bottom:20px;}
+		/* 复制提示 */
+	.copy-tips{
+		position:fixed;
+		z-index:999;
+		bottom:50%;
+		left:50%;
+		margin:0 0 -20px -80px;
+		background-color:rgba(0, 0, 0, 0.2);
+		filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#30000000, endColorstr=#30000000);
+		padding:6px;
+	}
+	.copy-tips-wrap{
+		padding:10px 20px;
+		text-align:center;
+		border:1px solid #F4D9A6;
+		background-color:#FFFDEE;
+		font-size:14px;
+	}
+						</code>
+					</pre>
+				</div>
+				<p class="article-body-important">
+					<a href="http://download.csdn.net/detail/ying1414058425/8177353">·代码下载地址：</a>
+				</p>
+				<div class="footer">第<span>2</span>页</div>
+			</div>
+			<div>
+				<div class="pre">
+					<xmp>
+	<body>
+		<div class="line">
+			<h2>demo 点击复制当前文本</h2>
+			<a href="#none" class="copy">点击复制我</a>
+		</div>
+	</body>
+					</xmp>
+				</div>
+				<div class="pre">
+					<pre>
+					<code class="language-javascript">
+	$(document).ready(function(){
+	/* 定义所有class为copy标签，点击后可复制被点击对象的文本 */
+	$(".copy").zclip({
+		path: "ZeroClipboard.swf",
+		copy: function(){
+		return $(this).text();
+	},
+	beforeCopy:function(){/* 按住鼠标时的操作 */
+		$(this).css("color","orange");
+	},
+	afterCopy:function(){/* 复制成功后的操作 */
+	var $copysuc = $("<div class='copy-tips'><div class='copy-tips-wrap'>☺ 复制成功</div></div>");
+	$("body").find(".copy-tips").remove().end().append($copysuc);
+	$(".copy-tips").fadeOut(3000);
+			}
+		});
+	});
+					</code>
+				</pre>
+				</div>
+				<div class="footer">第<span>3</span>页</div>
+			</div>
+			<div>
+				<div>
+					<h3>中国好同学^_^</h3>
+					<img class="nor" src="l-a.jpg" alt="">
+					<h3>IE：我想让所有人知道，其他浏览器，都被我承包了！</h3>
+					<img class="nor" src="l-b.jpg" alt="">
+				</div>
+				<div class="footer">第<span>4</span>页</div>
+			</div>
+			<div class="faker">
+				<h3>#2-laravel 使用Faker创建测试数据</h3>
+				<div class="img">
+					<img class="faker-img xiejunjie" src="xiejunjie.jpg">
+				</div>
+				<p class="article-info"><span>作者</span><span>-</span><span>谢俊杰</span></p>
+				<p class="article-body-detail">数据库填充是为了能够更好地进行真实的数据测试，
+				但是自己手动编写太麻烦，这时候可以使用这个Faker库创建测试数据。</p>
+				<p class="article-body-important">·使用composer安装Faker</p>
+				<div class="img">
+					<img class="faker-img" src="faker-code-1.jpg">
+				</div>
+				<p class="article-body-detail">·在composer.json文件中添加require</p>
+				<p class="article-body-detail">·然后运行composer update进行安装</p>
+				<p class="article-body-important">·添加测试数据</p>
+				<p class="article-body-important">·在种子文件中使用Faker库轻松创建测试数据</p>
+				<div class="footer">第<span>5</span>页</div>
+			</div>
+			<div class="faker">
+				<br />
+				<div class="img">
+					<img class="faker-img" src="faker-code.jpg">
+				</div>
+				<p class="article-body-important">·之后运行php artisan db:seed进行填充</p>
+				<hr />
+				<div class="divlaugh">
+					<p class="laugh">
+						女程序员是这么征婚的：SELECT * FROM 男人们 WHERE 未婚=true and Gay=false and 有房=true and 有车 =true and 条件 in (帅气,绅士,大度,气质,智慧,温柔,体贴,会浪漫,活泼,可爱,最好还能带孩子) and 年龄 between(24, 40) Order by 存款 desc
+					</p>
+					<hr />
+					<p class="laugh">
+						下午帮一个初来大陆的老外“修”电脑，他完全不明白为什么之前好好的电脑现在运行缓慢，当看他到我操作鼠标在金山毒霸复杂的卸载界面中穿梭，最终开始卸载时，眼中放出奇异的光芒。
+					</p>
+				</div>
+				<div class="footer">第<span>6</span>页</div>
+			</div>
+			<div>
+				<p>目录：</p>
+				<p><a class="linkTo" page="4" >班级动态</a></p>
+				<p><a class="linkTo" page="6">技术交流</a></p>
+				<p><a class="linkTo" page="8">技术新闻</a></p>
+				<p><a class="linkTo" page="10">码农人生</a></p>
+				<p><a class="linkTo" page="12">资源推荐</a></p>
+				<p><a class="linkTo" page="14">其它内容</a></p>
+				<div class="footer">第<span>7</span>页</div>
+			</div>
+			<div class="recommend">
+				<h1>文章推荐</h1>
+				<div class="footer">第<span>7</span>页</div>
+			</div>
+			<div> 
+				<p>
+					<a href="http://code.csdn.net/news/2822521">
+						（1）HTML5标准尘埃落定，CODE开源弹重装出发
+					</a>
+				</p>
+				<p>
+					<a href="http://www.php100.com/html/it/focus/2014/1029/7653.html">
+						（2）关于程序员工作效率的文章
+					</a>
+				</p>
+				<div class="footer">第<span>8</span>页</div>
+			</div>
+			<div> 技术交流
+				<div class="footer">第<span>9</span>页</div>
+			</div>
+			<div> 
+				<div class="footer">第<span>10</span>页</div>
+			</div>
+			<div> 技术新闻
+				<div class="footer">第<span>5</span>页</div>
+			</div>
+			<div> 
+				<div class="footer">第<span>6</span>页</div>
+			</div>
+			<div> 码农人生
+				<div class="footer">第<span>7</span>页</div>
+			</div>
+			<div> 资源推荐
+				<div class="footer">第<span>8</span>页</div>
+			</div>
+			<div> 
+				<div class="footer">第<span>9</span>页</div>
+			</div>
+			<div> 其它内容
+				<div class="footer">第<span>10</span>页</div>
+			</div>
+			<div> 
+				<div class="footer">第<span>11</span>页</div>
+			</div>
+			<div class="hard">最后</div>
+			<div></div>
+			<div class="hard cover-back">123</div>
+		</div>
+	</div>
+</body>
+</html>
