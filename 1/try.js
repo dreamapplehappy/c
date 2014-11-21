@@ -45,31 +45,6 @@ $(function(){
 	$("#flipbook").bind("start", function(event) {
 		clearInterval(interval);
 	});
-	$("#flipbook").bind("turned", function(event, page, view) {
-		if(4 == page){
-			$("body").css({backgroundImage: "url('bg-36.jpg')"});
-		}
-	});
-	$("#flipbook").bind("start", function(event, pageObject, corner) {
-		if(4 == pageObject.page){
-			$("body").css({backgroundImage: "url('bg-36.jpg')"});
-		}
-	});
-	$("#flipbook").bind("turned", function(event, page, view) {
-		if(10 == page){
-			$("body").css({backgroundImage: "url('bg-37.jpg')"});
-		}
-	});
-	$("#flipbook").bind("start", function(event, pageObject, corner) {
-		if(10 == pageObject.page){
-			$("body").css({backgroundImage: "url('bg-37.jpg')"});
-		}
-	});
-	/*$("#flipbook").bind("turned", function(event, page, view) {
-		if(2 != page){
-			$("body").css({backgroundImage: "url('bg-1.jpg')"});
-		}
-	});*/
 	$(window).bind("keydown", function(e){
 		if (e.keyCode==37){
 			$("#flipbook").turn("previous");

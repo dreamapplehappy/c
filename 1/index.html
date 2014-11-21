@@ -69,6 +69,7 @@
 			text-indent: 20px;
 			line-height: 17px;
 			text-align: left;
+			border-bottom: 1px solid #CCC;
 		}
 		p.article-body-detail{
 			padding: 0 20px 0 20px;
@@ -185,12 +186,13 @@
 			margin: 0 20px 0 20px;
 			background: linear-gradient(90deg, #000, #999);
 			color: white;
+			border-radius: 10px;
 		}
 		div.divlaugh{
 
 		}
 		div.technology{
-			background-image: url("bg-a-f.jpg") !important;
+			background-image: url("bg-lovelife-1.jpg") !important;
 		}
 		div.recommend{
 			background-image: url("bg-d-f.jpg") !important;
@@ -207,6 +209,92 @@
 		}
 		a:hover{
 			color: blue;
+		}
+		img.ajax{
+			width: 460px;
+		}
+		li.abdl{
+			margin-left: 30px;
+			font-size: 15px;
+			text-align: left;
+			text-indent: 20px;
+		}
+		div.js pre{
+			height: 320px;
+		}
+		pre.css{
+			width: 460px;
+			height: 180px;
+			margin: 0 20px 0 20px;
+			background-color: black;
+			color:white;
+			text-indent: 20px;
+			text-align: left;
+		}
+		pre.js{
+			width: 460px;
+			margin: 0 20px 0 20px;
+			background-color: black;
+			color:white;
+			text-indent: 20px;
+			text-align: left;
+		}
+		pre.short{
+			height: 30px !important;
+		}
+		pre.short-1{
+			height: 60px !important;
+		}
+		pre.long{
+			height: 60px !important;
+		}
+		pre.long-1{
+			height: 60px !important;
+		}
+		pre.long-2{
+			height: 60px !important;
+		}
+		pre.long-3{
+			height: 60px !important;
+		}
+		pre.html xmp{
+			padding: 0px;
+			width: 460px;
+			font-size: 15px;
+			margin: 0 20px 0 20px;
+			background-color: black;
+			color:white;
+			text-indent: 20px;
+			text-align: left;
+		}
+		div.html{
+			background-image: url("my-bg-5-1.jpg") !important;
+		}
+		div.cat{
+			background-image: url("my-bg-1-1.jpg") !important;
+		}
+		div.back,div.laugh{
+			background: linear-gradient(45deg, white, black) !important;
+		}
+		div.laugh p{
+			padding: 5px 20px 10px 5px;
+			border-radius: 20px;
+			background-color: rgb(187, 255, 17);
+			color: black;
+		}
+		div.div{
+			background-image: url("my-bg-3-1.jpg") !important;
+		}
+		div.code{
+			background-image: url("my-bg-6-1.jpg") !important;
+		}
+		div.xm{
+			background-image: url("my-bg-7-1.jpg") !important;
+		}
+		h1.ngu{
+			line-height: 600px;
+			text-shadow: 10px 10px 10px;
+			color: black;
 		}
 	</style>
 
@@ -265,19 +353,19 @@
 				<p class="article-body-detail">
 					<a href="http://demo.jb51.net/js/ZeroClipboard/index.html">http://demo.jb51.net/js/ZeroClipboard/index.html</a>
 				</p>
-				<p class="article-body-important">·实现原理分析： </p>
+				<p class="article-body-important">[@]实现原理分析： </p>
 				<p class="article-body-detail">
 					首先介绍一个跨浏览器的库类 Zero Clipboard 。它利用 Flash 进行复制，所以只要浏览器装有 Flash 就可以运行，而且比 IE 的 document.execCommand("Copy") 更加灵活。他会自动创建一个的flash，让其漂浮在按钮之上，这样其实点击的不是按钮而是 Flash ，也就可以使用 Flash 的复制功能了
 				</p>
-				<p class="article-body-important">·注意事项：</p>
+				<p class="article-body-important">[@]注意事项：</p>
 				<p class="article-body-detail">
 					一定要在PHP环境下运行，即使你打开的是html文件。
 				</p>
-				<p class="article-body-important">·需要引入两个js jquery库和zclip库</p>
+				<p class="article-body-important">[@]需要引入两个js jquery库和zclip库</p>
 				<div class="footer">第<span>1</span>页</div>
 			</div>
 			<div>
-				<p class="article-body-important">·代码展示(CSS部分)</p>
+				<p class="article-body-important">[@]代码展示(CSS部分)</p>
 				<div class="pre">
 					<pre>
 						<code class="language-css">
@@ -319,7 +407,7 @@
 	</body>
 					</xmp>
 				</div>
-				<div class="pre">
+				<div class="pre js">
 					<pre>
 					<code class="language-javascript">
 	$(document).ready(function(){
@@ -344,15 +432,8 @@
 				</div>
 				<div class="footer">第<span>3</span>页</div>
 			</div>
-			<div>
-				<div>
-					<h3>中国好同学^_^</h3>
-					<img class="nor" src="l-a.jpg" alt="">
-					<h3>IE：我想让所有人知道，其他浏览器，都被我承包了！</h3>
-					<img class="nor" src="l-b.jpg" alt="">
-				</div>
-				<div class="footer">第<span>4</span>页</div>
-			</div>
+			<div class="html"></div>
+			<div class="back"></div>
 			<div class="faker">
 				<h3>#2-laravel 使用Faker创建测试数据</h3>
 				<div class="img">
@@ -361,52 +442,283 @@
 				<p class="article-info"><span>作者</span><span>-</span><span>谢俊杰</span></p>
 				<p class="article-body-detail">数据库填充是为了能够更好地进行真实的数据测试，
 				但是自己手动编写太麻烦，这时候可以使用这个Faker库创建测试数据。</p>
-				<p class="article-body-important">·使用composer安装Faker</p>
+				<p class="article-body-important">[@]使用composer安装Faker</p>
 				<div class="img">
 					<img class="faker-img" src="faker-code-1.jpg">
 				</div>
 				<p class="article-body-detail">·在composer.json文件中添加require</p>
 				<p class="article-body-detail">·然后运行composer update进行安装</p>
-				<p class="article-body-important">·添加测试数据</p>
-				<p class="article-body-important">·在种子文件中使用Faker库轻松创建测试数据</p>
-				<div class="footer">第<span>5</span>页</div>
+				<p class="article-body-important">[@]添加测试数据</p>
+				<p class="article-body-important">[@]在种子文件中使用Faker库轻松创建测试数据</p>
+				<div class="footer">第<span>4</span>页</div>
 			</div>
 			<div class="faker">
 				<br />
 				<div class="img">
 					<img class="faker-img" src="faker-code.jpg">
 				</div>
-				<p class="article-body-important">·之后运行php artisan db:seed进行填充</p>
-				<hr />
-				<div class="divlaugh">
-					<p class="laugh">
-						女程序员是这么征婚的：SELECT * FROM 男人们 WHERE 未婚=true and Gay=false and 有房=true and 有车 =true and 条件 in (帅气,绅士,大度,气质,智慧,温柔,体贴,会浪漫,活泼,可爱,最好还能带孩子) and 年龄 between(24, 40) Order by 存款 desc
-					</p>
-					<hr />
-					<p class="laugh">
-						下午帮一个初来大陆的老外“修”电脑，他完全不明白为什么之前好好的电脑现在运行缓慢，当看他到我操作鼠标在金山毒霸复杂的卸载界面中穿梭，最终开始卸载时，眼中放出奇异的光芒。
-					</p>
+				<p class="article-body-important">[@]之后运行php artisan db:seed进行填充</p>
+				<div class="footer">第<span>5</span>页</div>
+			</div>
+			<div class="div"></div>
+			<div class="back"></div>
+			<div>
+				<h3>#3-Jquery下的Ajax</h3>
+				<div class="img">
+					<img class="faker-img xiejunjie" src="xiejunjie.jpg">
 				</div>
+				<p class="article-info"><span>作者</span><span>-</span><span>张坚革</span></p>
+				<p class="article-body-important">[@]什么是 AJAX？</p>
+				<p class="article-body-detail">AJAX = 异步 JavaScript 和 XML（Asynchronous JavaScript and XML）。 
+					简短地说，在不重载整个网页的情况下，AJAX通过后台加载数据，并在网页上进行显示。也就是说Ajax只能返回数据，不能返回页面，所以用Ajax来跳转页面是行不通的。 
+					使用 AJAX 的应用程序案例：谷歌地图、腾讯微博、优酷视频、人人网等等。</p>
+				<p class="article-body-important">[@]关于 jQuery 与 AJAX</p>
+				<p class="article-body-detail">jQuery 提供多个与 AJAX 有关的方法。 
+					通过 jQuery AJAX 方法，您能够使用 HTTP Get 和 HTTP Post从远程服务器上请求文本、HTML、XML 或 JSON 同时您能够把这些外部数据直接载入网页的被选元素中。如果没有jQuery，AJAX编程还是有些难度的。编写常规的AJAX代码并不容易，因为不同的浏览器对AJAX的实现并不相同。这意味着您必须编写额外的代码对浏览器进行测试。不过，jQuery团队为我们解决了这个难题，我们只需要一行简单的代码，就可以实现 AJAX 功能。</p>
+				<p class="article-body-important">[@]jQuery load() 方法</p>
 				<div class="footer">第<span>6</span>页</div>
 			</div>
 			<div>
-				<p>目录：</p>
-				<p><a class="linkTo" page="4" >班级动态</a></p>
-				<p><a class="linkTo" page="6">技术交流</a></p>
-				<p><a class="linkTo" page="8">技术新闻</a></p>
-				<p><a class="linkTo" page="10">码农人生</a></p>
-				<p><a class="linkTo" page="12">资源推荐</a></p>
-				<p><a class="linkTo" page="14">其它内容</a></p>
+				<p class="article-body-detail">jQuery load() 方法是简单但强大的 AJAX 方法。 
+					load() 方法从服务器加载数据，并把返回的数据放入被选元素中。</p>
+				<pre class="js short">
+$(selector).load(URL,data,callback);
+				</pre>
+				<p class="article-body-detail">必需的 URL 参数规定您希望加载的 URL。 
+					可选的 data 参数规定与请求一同发送的查询字符串键/值对集合。 
+					可选的 callback 参数是 load() 方法完成后所执行的函数名称。</p>
+				<p class="article-body-detail">实例：</p>
+				<pre class="js short">
+$("#div1").load("demo_test.txt");
+				</pre>
+				<p class="article-body-detail">上述代码会把文件 "demo_test.txt" 的内容加载到指定的#div#元素中
+					也可以把 jQuery 选择器添加到 URL 参数。 
+					下面的例子把 "demo_test.txt"文件中id="p1"的元素的内容，加载到指定的#div#元素中：</p>
+				<pre class="js short">
+$("#div1").load("demo_test.txt #p1");
+				</pre>
+				<p class="article-body-detail">可选的 callback 参数规定当 load() 方法完成后所要允许的回调函数。回调函数可以设置不同的参数：
+					<li class="abdl">responseTxt - 包含调用成功时的结果内容</li>
+					<li class="abdl">statusTXT - 包含调用的状态</li>
+					<li class="abdl">xhr - 包含 XMLHttpRequest 对象</li></p>
 				<div class="footer">第<span>7</span>页</div>
 			</div>
+			<div>
+				<p class="article-body-detail">下面的例子会在 load() 方法完成后显示一个提示框。如果 load() 方法已成功，则显示“外部内容加载成功！”，而如果失败，则显示错误消息：</p>
+				<pre class="js">
+$("button").click(function(){
+	$("#div1").load("demo_test.txt",
+function(responseTxt,statusTxt,xhr){
+   	 if(statusTxt=="success")
+     		 alert("外部内容加载成功！");
+   	 if(statusTxt=="error")
+      		alert("Error: "+xhr.status+": "+xhr.statusText);
+  	});
+});
+				</pre>
+				<p class="article-body-important">[@]jQuery get()和post()方法用于通过HTTP GET或POST请求从服务器请求数据。</p>
+				<p class="article-body-detail">
+				两种在客户端和服务器端进行请求-响应的常用方法是：GET 和 POST。
+					<li class="abdl">GET - 从指定的资源请求数据</li>
+					<li class="abdl">POST - 向指定的资源提交要处理的数据</li>
+				</p>
+				<p class="article-body-detail">GET 基本上用于从服务器获得（取回）数据。注释：GET 方法可能返回缓存数据。 
+					POST 也可用于从服务器获取数据。不过，POST 方法不会缓存数据，并且常用于连同请求一起发送数据。</p>
+				<p class="article-body-important">[@]jQuery $.get() 方法</p>
+				<p class="article-body-detail">$.get() 方法通过 HTTP GET 请求从服务器上请求数据。</p>
+				<div class="footer">第<span>8</span>页</div>
+			</div>
+			<div>
+				<br />
+				<pre class="js short">
+$.get(URL,callback);
+				</pre>
+				<p class="article-body-detail">必需的 URL 参数规定您希望请求的 URL。 
+					可选的 callback 参数是请求成功后所执行的函数名。</p>
+				<p class="article-body-detail">下面的例子使用$.get()方法从服务器上的一个文件中取回数据：</p>
+				<pre class="js">
+$("button").click(function(){
+  $.get("demo_test.asp",function(data,status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+});
+				</pre>
+				<p class="article-body-important">[@]jQuery $.post() 方法</p>
+				<p class="article-body-detail">$.post() 方法通过 HTTP POST 请求从服务器上请求数据。</p>
+				<pre class="js short">
+$.post(URL,data,callback);
+				</pre>
+				<p class="article-body-detail"><li class="abdl">必需的 URL 参数规定您希望请求的 URL。</li>
+					<li class="abdl">可选的 data 参数规定连同请求发送的数据。</li>
+					<li class="abdl">可选的 callback 参数是请求成功后所执行的函数名。</li></p>
+				<p class="article-body-detail">下面的例子使用 $.post() 连同请求一起发送数据：</p>
+				<div class="footer">第<span>9</span>页</div>
+			</div>
+			<div>
+				<br />
+				<pre class="js">
+$("button").click(function(){
+  $.post("demo_test_post.asp",
+  {
+    name:"Donald Duck",
+    city:"Duckburg"
+  },
+  function(data,status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+});
+				</pre>
+				<p class="article-body-detail">另外，Ajax在使用时还会触发很多事件，可以根据这些事件编写不同功能的Ajax代码，部分事件如下：更多事件可见</p>
+				<p class="article-body-detail"><a href="http://api.jquery.com/category/ajax/global-ajax-event-handlers/">jQuery官网</a></p>
+				<p class="article-body-detail">局部事件就是在每次的Ajax请求时在方法内定义的, 
+					全局事件是每次的Ajax请求都会触发的，它会向DOM中的所有元素广播.</p>
+				<p class="article-body-important">[@]jQuery.ajax( options ) : 通过 HTTP 请求加载远程数据</p>
+				<p class="article-body-detail">$.post、$.get是一些简单的方法，如果要处理复杂的逻辑，还是需要用到jQuery.ajax()</p>
+				<p class="article-body-important">[@]1$.ajax的一般格式</p>
+				<div class="footer">第<span>10</span>页</div>
+			</div>
+			<div>
+				<br />
+				<pre class="js">
+$.ajax({
+    type: 'POST',
+    url: url,
+    data: data,
+    success: success,
+    dataType: dataType
+});
+				</pre>
+				<p class="article-body-important">[@]2$.ajax的参数描述</p>
+				<p class="article-body-detail"><li class="abdl">url必需。规定把请求发送到哪个 URL。</li>
+					<li class="abdl">data可选。映射或字符串值。规定连同请求发送到服务器的数据。</li>
+					<li class="abdl">success(data, textStatus, jqXHR) 可选。请求成功时执行的回调函数。</li>
+					<li class="abdl">dataType可选。规定预期的服务器响应的数据类型。默认执行智能判断（xml、json、script 或 html）。</li></p>
+				<p class="article-body-important">[@]3$.ajax需要注意的一些地方：</p>
+				<p class="article-body-detail"><li class="abdl">data主要方式有三种，html拼接的，json数组，form表单经serialize()序列化的；通过dataType指定，不指定智能判断。</li>
+					<li class="abdl">$.ajax只提交form以文本方式，如果异步提交包含上传是传过不过去,需要使用jquery.form.js的$.ajaxSubmit</li></p>
+				<div class="footer">第<span>11</span>页</div>
+			</div>
+			<div>
+				<p class="article-body-important">[@]实例：</p>
+				<pre class="js">
+$.ajax( {
+    url:'productManager_reverseUpdate',
+    data:{
+             selRollBack : selRollBack,
+             selOperatorsCode : selOperatorsCode,
+             PROVINCECODE : PROVINCECODE,
+             pass2 : pass2
+    },
+    type:'post',
+    cache:false,
+    dataType:'json',
+    success:function(data) {
+        if(data.msg =="true" ){
+            alert("修改成功！");
+            window.location.reload();
+        }else{
+            view(data.msg);
+        }
+     },
+     error : function() {
+          alert("异常！");
+     }
+});
+				</pre>
+				<div class="footer">第<span>12</span>页</div>
+			</div>
+			<div class="code"></div>
+			<div>
+				<h3>#4-CSS清除浮动</h3>
+				<div class="img">
+					<img class="faker-img xiejunjie" src="xiejunjie.jpg">
+				</div>
+				<p class="article-info"><span>作者</span><span>-</span><span>刘铁</span></p>
+				<p class="article-body-important">[@]父容器塌陷</p>
+				<p class="article-body-detail">在设计网页布局时，有一个很蛋疼的问题，那就是使用浮动（float）时的**父容器塌陷**问题。
+					先说一下什么是塌陷：</p>
+				<p class="article-body-detail">塌陷：父元素只包含浮动元素，那么它的高度就会塌缩为零（前提就是你们没有设置高度（height）属性，或者设置了为auto。就会出现这种情况，当然不是所用的浏览器都是这样的，在IE8下面没有这种情况。）如果父元素不包含任何的可见背景，这个问题会很难被注意到，但是这是一个很重要的问题。</p>
+				<p class="article-body-detail">先看看代码
+					**CSS代码:*</p>
+				<pre class="css">
+ #clearfix{
+            width:900px;background-color:#556677;
+            margin:0 auto;height:auto;
+}
+            .test{
+            border: 5px solid #126121;float: left;
+            height: 200px; margin-left: 18px;
+            margin-top: 40px;width: 150px;
+}
+				</pre>
+					<div class="footer">第<span>13</span>页</div>
+				</div>
+			<div>
+				<p class="article-body-detail">html代码</p>
+				<pre class="html">
+				<xmp>
+<div class="clearfix" id="clearfix">
+        <div class="test">111</div>
+        <div class="test ">222</div>
+        <div class=" test ">333</div>
+        <div class=" test ">444</div>
+        <div class=" test ">555</div>
+</div>
+				</xmp>
+				</pre>
+				<p class="article-body-detail">这样的话，在fireFox、chrome下是没有body的#556677颜色。并不是没有上色。你查看body元素的盒型图会发现，他的高度为0。这就是塌陷</p>
+				<p class="article-body-important">[@]**解决方法:**</p>
+				<p class="article-body-detail">方法一:万能float闭合:</p>
+				<pre class="css short">
+.clearfix{clear:both;overflow:hidden;}
+				</pre>
+				<p class="article-body-detail">上诉办法是在需要清除浮动的地方加个div.clear或者br.clear，我们知道这样能解决基本清浮1动问题。但是这种方法的最大缺陷就是改变了html结构，虽然只是加个div。</p>
+				<div class="footer">第<span>14</span>页</div>
+			</div>
+			<div>
+				<p class="article-body-detail">方法二:最优浮动闭合方案（**推荐**）：</p>
+				<pre class="css short-1">
+.clearfix:after{content:".";display:block;height:0;
+	clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+				</pre>
+				<p class="article-body-detail">用法很简单，在浮动元素的父云素上添加class=”demo clearfix”。
+					你会发现这个办法也有个弊端，但的确是小问题。</p>
+				<p class="article-body-detail">改变css写法就ok了：</p>
+				<pre class="css short-1">
+.demo:after,.demo2:after{content:".";display:block;
+	height:0;clear:both;visibility:hidden}
+.demo,.demo2{*+height:1%;}
+				</pre>
+				<p class="article-body-detail">以上写法就避免了改变html结构，直接用css解决了。</p>
+				<p class="article-body-detail">方法三:
+					很拉轰的浮动闭合办法：</p>
+				<pre class="css short">
+.clearfix{overflow:auto;_height:1%}
+				</pre>
+				<p class="article-body-detail">方法四:</p>
+				<pre class="css short">
+.clearfix{overflow:hidden;_zoom:1;}
+				</pre>
+				<div class="footer">第<span>15</span>页</div>
+			</div>
+			<div>
+				<p class="article-body-important">[@]参考资料:</p>
+				<p>
+					<li class="abdl"><a href="http://fireflywithcat.iteye.com/blog/1615606">[解决方法参考1]</a></li>
+					<li class="abdl"><a href="http://www.daqianduan.com/3606.html">[解决方法参考2]</a></li>
+					<li class="abdl"><a href="http://hi.baidu.com/doushatuzi/item/8c6f085d7117e7434fff20d8">[为什么清除浮动]</a></li>
+					<li class="abdl"><a href="http://www.iyunlu.com/view/css-xhtml/55.html">[那些年我们一起清除的浮动]</a></li>
+				</p>
+				<div class="footer">第<span>16</span>页</div>
+			</div>
 			<div class="recommend">
-				<h1>文章推荐</h1>
-				<div class="footer">第<span>7</span>页</div>
+				<h1>文章资源推荐</h1>
 			</div>
 			<div> 
 				<p>
-					<a href="http://code.csdn.net/news/2822521">
-						（1）HTML5标准尘埃落定，CODE开源弹重装出发
+					<a href="http://pan.baidu.com/s/1mgqmIaG">
+						（1）５个实用工具
 					</a>
 				</p>
 				<p>
@@ -414,38 +726,56 @@
 						（2）关于程序员工作效率的文章
 					</a>
 				</p>
-				<div class="footer">第<span>8</span>页</div>
+				<p>
+					<a href="http://code.csdn.net/news/2822521">
+						（3）HTML5标准尘埃落定，CODE开源弹重装出发
+					</a>
+				</p>
 			</div>
-			<div> 技术交流
-				<div class="footer">第<span>9</span>页</div>
+			<div class="xm"></div>
+			<div>
+				<div>
+					<h3>佛祖保佑，永无bug</h3>
+					<img class="nor" src="l-c.jpg" alt="">
+					<h3>Javascript有用的部分！</h3>
+					<img class="nor" src="l-d.jpg" alt="">
+				</div>
+			</div>
+			<div class="laugh">
+				<p class="article-body-important">女程序员是这么征婚的：SELECT * FROM 男人们 WHERE 未婚=true and Gay=false and 有房=true and 有车 =true and 条件 in (帅气,绅士,大度,气质,智慧,温柔,体贴,会浪漫,活泼,可爱,最好还能带孩子) and 年龄 between(24, 40) Order by 存款 desc</p>
+				<p class="article-body-important">下午帮一个初来大陆的老外“修”电脑，他完全不明白为什么之前好好的电脑现在运行缓慢，当看他到我操作鼠标在金山毒霸复杂的卸载界面中穿梭，最终开始卸载时，眼中放出奇异的光芒。</p>
+				<p class="article-body-important">做男人就要像做产品一样：要么有良好体验，要么有友好界面，要么烧钱改变用户习惯。</p>
+				<p class="article-body-important">国内视频网站的画质其实是这样翻译的: 1080P->高清、 超清->能看、 高清->AV画质、 标清->屎 </p>
+				<p class="article-body-important">他其貌不扬，并没有太显赫的背景，他曾经是一个英语老师，因为口才不错受到了当年学生的喜爱。因为机缘巧合，他离开了英语行业，投身于IT产业，并希望有一天自己的公司可以冲出国门，登陆美国……哎，哎，罗老师罗老师，您先坐下您先坐下，别急着挥手啊，我刚说的是马云啊。</p>
+				<p class="article-body-important">苹果:“我系统最牛逼！” 三星:“我屏幕最大！” 小米:“冬天快到了，我能取暖！” vivo:“我时下在国内卖的最火！” 角落传来诺基亚的声音:“你们都TM闭嘴，谁想粉身碎骨我成全他！”</p>
+			</div>
+			<div>
+				<div>
+					<h3>中国好同学^_^</h3>
+					<img class="nor" src="l-a.jpg" alt="">
+					<h3>IE：我想让所有人知道，其他浏览器，都被我承包了！</h3>
+					<img class="nor" src="l-b.jpg" alt="">
+				</div>
+			</div>
+			<div class="laugh">
+				<p class="article-body-important">前几天一直在纠结光棍节是去京东还是去淘宝，后来听同事说：“宁可给马云贡献整容的钱，也不给刘强东买避孕套的钱去推倒女神”。瞬间给跪了！……这时，角落里传来励志的声音：“马云还需要整容？我都想整成他那样！”</p>
+				<p class="article-body-important">我是一个苦b的张江男，今晚加班到快通宵了，困得快睁不开眼了。女上司很关心，问我要不要吃宵夜。我没好气地说，宵夜就算了，能让我睡一觉就行了。女上司红着脸说了句讨厌啊，然后坐在我身边不动，好像距离我很近，搞得我很紧张，难道她发现我的程序出了bug？</p>
+				<p class="article-body-important">说到大小写敏感问题，有个程序员朋友以前提到自己女朋友都说mm或MM，后来大家得知mm和MM是两个人……然后一众人都被他鄙视一遍「你们这帮用Windows的」</p>
+				<p class="article-body-important">昨天室友淘宝上买一件衣服，，卖家说上图好评立马返现五元，，于是室友穿上衣服自信美美的拍了五张照片，，，，，今天卖家给朋友返现了十元，叫室友把图片给删了！</p>
+				<p class="article-body-important">今天拿笔记本电脑去让人做系统，说要30块。系统做好之后，老板：你把资源共享下，我不收费了。复制完毕，老板：以后经常来保养电脑。有什么小毛病免费修。</p>
+				<p class="article-body-important">如果你在网上问“什么减肥方法最有效？”天涯网友会给你一篇女生励志减肥的长文，知乎网友会向你介绍7种科学减肥办法，贴吧网友会晒出一堆美女照片刺激你，豆瓣网友会说不妨试试失恋，微博网友会给你编15个关于胖子的段子，微信网友……可能会把你的朋友圈屏蔽了。</p>
 			</div>
 			<div> 
-				<div class="footer">第<span>10</span>页</div>
+				<h3 class="news">实验班第九周要闻</h3>
+				<p class="article-body-important">班级成立以黄可庆同学为领导的学委会，主要帮助老师解决班级事务，出谋划策，进行学习方面的管理。</p>
+				<p class="article-body-important">舒亚非老师决定进行一次班级改革，一改之前的教学方式以及期末分数结算方式。从本周起，期末成绩的结算方式改为“按劳分配”，即完成的项目越多、越好，参与班级活动越多，对班级贡献越多，期末成绩也会相对越高，在舒老师的文件中我们了解到，完成一个项目是期末及格的最基本的条件，能力强的可以和同学进行合作，共同完成其他的项目，进行加分。同学们还可以积极参与班级的各项活动，积极的“赚”分数。同时，班级将实行较为自由的学习制度，不在约束同学们的学习，只要能在期末拿得出成果，不看过程，只看结果。</p>
+				<p class="article-body-important">期末结束验收时，同学们要积极做好充分准备，将本学期所做的所有成绩进行展示，届时老师将在现场为大家评分，请大家积极参与到班级与项目中去，拿到一个不错的期末成绩。</p>
+				<p class="article-body-important">陈轲小组已经基本完成图书管理系统普通用户客户端，其他小组加油！</p>
 			</div>
-			<div> 技术新闻
-				<div class="footer">第<span>5</span>页</div>
+			<div class="hard ngu">
+				<h1 class="ngu">Never Give Up!</h1>
 			</div>
-			<div> 
-				<div class="footer">第<span>6</span>页</div>
-			</div>
-			<div> 码农人生
-				<div class="footer">第<span>7</span>页</div>
-			</div>
-			<div> 资源推荐
-				<div class="footer">第<span>8</span>页</div>
-			</div>
-			<div> 
-				<div class="footer">第<span>9</span>页</div>
-			</div>
-			<div> 其它内容
-				<div class="footer">第<span>10</span>页</div>
-			</div>
-			<div> 
-				<div class="footer">第<span>11</span>页</div>
-			</div>
-			<div class="hard">最后</div>
-			<div></div>
-			<div class="hard cover-back">123</div>
+			<div class="hard cover-back"></div>
 		</div>
 	</div>
 </body>
