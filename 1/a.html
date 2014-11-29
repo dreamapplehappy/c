@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body{
+		height: 1000px;
+	}
+		#flipbook{
+			width:400px;
+			height:300px;
+			margin-top: 60px;
+		}
+
+		#flipbook{
+			-webkit-transition:margin-left 0.2s ease-in-out;
+			-moz-transition:margin-left 0.2s ease-in-out;
+			-o-transition:margin-left 0.2s ease-in-out;
+			-ms-transition:margin-left 0.2s ease-in-out;
+			transition:margin-left 0.2s ease-in-out;
+		}
+
+		#flipbook .page{
+			width: 600px;
+			height:600 px;
+			line-height:20px;
+			font-size:20px;
+			text-align:center;
+			background-color:;
+		}
+		#flipbook .page-wrapper{
+			-webkit-perspective:2000px;
+			-moz-perspective:2000px;
+			-ms-perspective:2000px;
+			-o-perspective:2000px;
+			perspective:2000px;
+		}
+
+		#flipbook .hard{
+			color:#000;
+			-webkit-box-shadow:inset 0 0 5px #666;
+			-moz-box-shadow:inset 0 0 5px #666;
+			-o-box-shadow:inset 0 0 5px #666;
+			-ms-box-shadow:inset 0 0 5px #666;
+			box-shadow:inset 0 0 5px #666;
+			font-weight:bold;
+		}
+
+		#flipbook .odd{
+			background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+			background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+			background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+			background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+			background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+			background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+			-webkit-box-shadow:inset 0 0 5px #666;
+			-moz-box-shadow:inset 0 0 5px #666;
+			-o-box-shadow:inset 0 0 5px #666;
+			-ms-box-shadow:inset 0 0 5px #666;
+			box-shadow:inset 0 0 5px #666;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			background-color:;
+
+		}
+
+		#flipbook .even{
+			background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+			background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+			background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+			background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+			background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+			background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+			-webkit-box-shadow:inset 0 0 5px #666;
+			-moz-box-shadow:inset 0 0 5px #666;
+			-o-box-shadow:inset 0 0 5px #666;
+			-ms-box-shadow:inset 0 0 5px #666;
+			box-shadow:inset 0 0 5px #666;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+			background-color:;
+		}
+
+		#flipbook .shadow{
+			background-color:;
+		}
+		a#a{
+			position: absolute;
+			bottom: 0px;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.7.2.js"></script>
+	<script type="text/javascript" src="turn.js"></script>
+	<!-- <script type="text/javascript" src="all.js"></script> -->
+	<script>
+		$(function(){
+			$("#flipbook").turn({
+				width: 1000,
+				height: 600,
+				autoCenter: true
+			});
+			function changeTo(whichPage){
+				$("#flipbook").turn("page", whichPage);
+			}
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+	<!-- <a href="#" id="a" name="a">LLLLLL</a> -->
+		<div id="flipbook">
+			<div class="hard">1</div>
+			<div class="hard">2</div>
+			<div class="King">
+				<button class="btn">click</button>
+				<a href="javascript:changeTo(5)" onclick='$("#flipbook").turn("page", 5);'>JJJJJJJJJJ</a>
+			</div>
+			<div>
+				<a href="#" name="a" id="a"></a>
+			</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+			<div>11</div>
+			<div>r</div>
+			<div>r</div>
+			<div>w</div>
+			<div>e</div>
+			<div>r</div>
+			<div>r</div>
+			<div>r</div>
+			<div class="hard">3</div>
+			<div class="hard">4</div>
+		</div>
+	</div>
+</body>
+</html>

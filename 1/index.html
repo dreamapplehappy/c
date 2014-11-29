@@ -8,6 +8,7 @@
 		body{
 			overflow:hidden;
 			background-image: url("bg-1.jpg");
+			height: 1000px !important;
 		}
 		#container{
 			margin-left: 175px;
@@ -300,8 +301,6 @@
 
 	<script type="text/javascript" src="jquery-1.7.2.js"></script>
 	<script type="text/javascript" src="turn.js"></script>
-	<script type="text/javascript" src="try.js"></script>
-	<script type="text/javascript" src="prism.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			$("#flipbook").turn({
@@ -315,8 +314,15 @@
 			$("a.linkTo").click(function(){
 				changeTo(parseInt($(this).attr("page")));
 			});
+			/*$("a").click(function(){
+				changeTo(12);
+			});*/
+			$(".btn").click(function(){
+				changeTo(12);
+			});
 		});
 	</script>
+	<script type="text/javascript" src="try.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -334,9 +340,18 @@
 				<p>活动整理：边涛</p>
 				<p>责任编辑：罗鹏展</p>
 				<p>栏目编辑：罗鹏展</p>
+				<a href="#hello">hello</a>
+				<button class="btn" >King</button>
 				<p>美术编辑：罗鹏展</p>
 				<p>发行日期：2014-11-21</p>
 				<p>JUST DO IT !</p>
+			</div>
+			<div></div>
+			<div>
+				<a href="#helloc" onclick='$("#flipbook").turn("page", 9);'>1</a>
+				<a href="#" onclick='$("#flipbook").turn("page", 10);'>2</a>
+				<a href="#" onclick='$("#flipbook").turn("page", 11);'>3</a>
+				<a href="#helloc" onclick='$("#flipbook").turn("page", 8);'>4</a>
 			</div>
 			<div class="technology">
 				<h1>爱技术</h1>
@@ -462,8 +477,9 @@
 			</div>
 			<div class="div"></div>
 			<div class="back"></div>
-			<div>
+			<div  id="helloc" name="helloc">
 				<h3>#3-Jquery下的Ajax</h3>
+				<a href="#" name="hello" id="hello">HHHHHH</a>
 				<div class="img">
 					<img class="faker-img xiejunjie" src="xiejunjie.jpg">
 				</div>
@@ -778,5 +794,6 @@ $.ajax( {
 			<div class="hard cover-back"></div>
 		</div>
 	</div>
+	<script type="text/javascript" src="prism.js"></script>
 </body>
 </html>
